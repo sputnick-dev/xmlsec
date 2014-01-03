@@ -302,7 +302,7 @@ xmlSecDSigCtxSign(xmlSecDSigCtxPtr dsigCtx, xmlNodePtr tmpl) {
     if(ret < 0) {
         xmlSecError(XMLSEC_ERRORS_HERE,
                     NULL,
-                    "xmlSecDSigCtxSigantureProcessNode",
+                    "xmlSecDSigCtxSignatureProcessNode",
                     XMLSEC_ERRORS_R_XMLSEC_FAILED,
                     XMLSEC_ERRORS_NO_MESSAGE);
         return(-1);
@@ -365,7 +365,7 @@ xmlSecDSigCtxVerify(xmlSecDSigCtxPtr dsigCtx, xmlNodePtr node) {
     if(ret < 0) {
         xmlSecError(XMLSEC_ERRORS_HERE,
                     NULL,
-                    "xmlSecDSigCtxSigantureProcessNode",
+                    "xmlSecDSigCtxSignatureProcessNode",
                     XMLSEC_ERRORS_R_XMLSEC_FAILED,
                     XMLSEC_ERRORS_NO_MESSAGE);
         return(-1);
