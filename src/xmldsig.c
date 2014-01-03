@@ -360,7 +360,7 @@ xmlSecDSigCtxVerify(xmlSecDSigCtxPtr dsigCtx, xmlNodePtr node) {
     dsigCtx->status     = xmlSecDSigStatusUnknown;
     xmlSecAddIDs(node->doc, node, xmlSecDSigIds);
 
-    /* read siganture info */
+    /* read signature info */
     ret = xmlSecDSigCtxProcessSignatureNode(dsigCtx, node);
     if(ret < 0) {
         xmlSecError(XMLSEC_ERRORS_HERE,
